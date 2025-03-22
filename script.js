@@ -14,3 +14,8 @@ function atualizarTempo() {
 
 setInterval(atualizarTempo, 1000);
 atualizarTempo();
+
+function mostrarTab(tab) {
+    document.getElementById('minha').style.display = (tab === 'Arthur') ? 'block' : 'none';
+    document.getElementById('amiga').style.display = (tab === 'Manu') ? 'block' : 'none';
+}

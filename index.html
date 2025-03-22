@@ -7,30 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>Feliz Aniversário, Meu Amor! ❤️</h1>
-
-    <div class="galeria">
-        <img src="images/foto1.jpg" alt="Foto 1">
-        <img src="images/foto2.jpg" alt="Foto 2">
-        <img src="images/foto3.jpg" alt="Foto 3">
-    </div>
-
-    <div class="contador">
-        Estamos juntos há <span id="tempoJuntos"></span>.
-    </div>
-
-    <div class="mensagem">
-        <p>Meu amor, a cada dia que passa, sou mais grato por ter você ao meu lado. Essas fotos são apenas alguns dos muitos momentos lindos que vivemos juntos, e quis fazer essa lembrança porque você é uma das pessoas mais especiais da minha vida.</p>
-    
-        <p>Sei o quanto seu aniversário significa para você, e quero que saiba que para mim essa data também é única, porque foi o dia em que nasceu a pessoa que eu mais amo. Não existem palavras que possam descrever o quanto você é importante para mim. Você ilumina minha vida, me faz feliz de um jeito que nem consigo explicar, e a cada instante ao seu lado eu tenho ainda mais certeza de que quero viver tudo com você.</p>
-    
-        <p class="dedicatoria">Feliz aniversário, meu amor! Que seu dia seja tão maravilhoso quanto você é para mim. Te amo infinitamente! ❤️</p>
+    <div class="tabs">
+        <button onclick="mostrarTab('Arthur')">Arthur</button>
+        <button onclick="mostrarTab('Manu')">Manu</button>
     </div>
     
 
+    <div id="minha" class="tab-content">
+        <h1>Feliz Aniversário, Meu Amor! ❤️</h1>
+
+        <div class="album">
+            <img src="images/foto1.jpg" alt="Foto 1">
+            <img src="images/foto2.jpg" alt="Foto 2">
+            <img src="images/foto3.jpg" alt="Foto 3">
+            <img src="images/foto4.jpg" alt="Foto 4">
+            <img src="images/foto5.jpg" alt="Foto 5">
+            <img src="images/foto6.jpg" alt="Foto 6">
+            <img src="images/foto7.jpg" alt="Foto 7">
+            <img src="images/foto8.jpg" alt="Foto 8">
+            <img src="images/foto9.jpg" alt="Foto 9">
+            <img src="images/foto10.jpg" alt="Foto 10">
+    
+        </div>
+    
+        <div class="contador">
+            Estamos juntos há <span id="tempoJuntos"></span>.
+        </div>
+    
+        <div class="mensagem">
+            <p>Meu amor, a cada dia que passa, sou mais grato por ter você ao meu lado. Essas fotos são apenas alguns dos muitos momentos lindos que vivemos juntos, e quis fazer essa lembrança porque você é uma das pessoas mais especiais da minha vida.</p>
+        
+            <p>Sei o quanto seu aniversário significa para você, e quero que saiba que para mim essa data também é única, porque foi o dia em que nasceu a pessoa que eu mais amo. Não existem palavras que possam descrever o quanto você é importante para mim. Você ilumina minha vida, me faz feliz de um jeito que nem consigo explicar, e a cada instante ao seu lado eu tenho ainda mais certeza de que quero viver tudo com você.</p>
+        
+            <p class="dedicatoria">Feliz aniversário, meu amor! Que seu dia seja tão maravilhoso quanto você é para mim. Te amo infinitamente! ❤️</p>
+        </div>
+    </div>
     
 
+    <div id="amiga" class="tab-content" style="display: none;">
+        <h2>Mensagem da Amiga 💕</h2>
+        <p>Oi amiga, quero te desejar um feliz aniversário...</p>
+        <div class="album">
+            <img src="amiga_foto1.jpg" alt="Foto amiga 1">
+            <img src="amiga_foto2.jpg" alt="Foto amiga 2">
+        </div>
+    </div>
+    
     <script src="script.js"></script>
     <script src="hearts.js"></script>
 </body>

@@ -22,20 +22,25 @@ h1 {
     margin-bottom: 20px;
 }
 
-.galeria {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    gap: 10px;
-    padding-bottom: 10px;
+.album {
+    display: flex; /* Alinha as imagens lado a lado */
+    overflow-x: auto; /* Permite rolar horizontalmente */
+    gap: 10px; /* Espaço entre as imagens */
+    scroll-snap-type: x mandatory; /* Faz o scroll "grudar" na imagem */
+    padding: 10px;
+    white-space: nowrap;
 }
 
-.galeria img {
-    width: 90vw;
-    max-width: 400px;
+.album img {
+    width: 300px; /* Ajuste o tamanho como quiser */
+    height: 400px;
+    object-fit: cover;
     border-radius: 10px;
-    scroll-snap-align: center;
+    scroll-snap-align: center; /* Centraliza a imagem ao rolar */
 }
+
+
+
 
 .mensagem {
     background: #fff;
@@ -69,3 +74,39 @@ h1 {
     }
 }
 
+#mensagem {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff4081;
+    white-space: pre-wrap;
+  }
+  
+  #mensagem::after {
+    content: "|";
+    animation: piscar 0.8s infinite;
+  }
+  
+  @keyframes piscar {
+    50% { opacity: 0; }
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tabs button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background: #ff4d6d;
+    color: white;
+    border-radius: 5px;
+}
+
+.tab-content {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+}
